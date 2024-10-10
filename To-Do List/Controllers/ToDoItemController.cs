@@ -84,14 +84,7 @@ namespace To_Do_List.Controllers
             var ToDoItem = Context.ToDoItems.Find(Id);
             return View(ToDoItem);
         }
-        //public IActionResult EditToDb(ToDoItem ToDoItem, IFormFile File)
-        //{
-        //    Context.ToDoItems.Update(ToDoItem);
-        //    Context.SaveChanges();
-        //    TempData["update"] = "";
-        //    return RedirectToAction("Index");
-
-        //}
+       
         public IActionResult Delete(ToDoItem toDoItem)
         {
             Context.ToDoItems.Remove(toDoItem);
