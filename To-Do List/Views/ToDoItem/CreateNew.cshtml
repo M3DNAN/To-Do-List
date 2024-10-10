@@ -1,0 +1,25 @@
+﻿
+<div class="row">
+    <form action="AddToDb" method="post" enctype="multipart/form-data">
+
+        <div class="mb-3">
+            <label for="example Name" class="form-label"> Title</label>
+            <input name="Title" type="text" class="form-control" id="example Name">
+        </div>
+        <div class="mb-3">
+            <label for="example Description" class="form-label">Description</label>
+            <input name="Description" type="text" class="form-control" id="example Description">
+        </div>
+        <div class="mb-3">
+            <label for="example Price" class="form-label">Deadline</label>
+            <input name="Deadline" type="datetime-local" class="form-control" id="example Deadline">
+        </div>
+        <div class="mb-3">
+            <label for="example File" class="form-label">File</label>
+            <input name="File" type="file" class="form-control" id="example File">
+        </div>
+        <input type="hidden" name="CustomerId" value="@ViewBag.CustomerId" />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
